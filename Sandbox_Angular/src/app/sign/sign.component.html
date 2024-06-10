@@ -1,0 +1,31 @@
+<div class="fontSize">
+    <form [formGroup]="formSign" (submit)="createNewUser()">
+        <div class="width">
+            {{text.name}}
+            <div *ngIf="formSign.get('name')?.touched && formSign.get('name')?.invalid">
+                {{text.name_req}}
+            </div>
+            <br>
+            <input class="widthInpDel" type="text" formControlName="name">
+        </div>
+        <div class="width">
+            {{text.user}}
+            <div *ngIf="formSign.get('login')?.touched && formSign.get('login')?.invalid">
+                {{text.user_req}}
+            </div>
+            <br>
+            <input class="widthInpDel" type="text" formControlName="login">
+        </div>
+        <div class="width">
+            {{text.pass}}
+            <div *ngIf="formSign.get('password')?.touched && formSign.get('password')?.invalid">
+                {{text.pass_req}}
+            </div>
+            <br>
+            <input class="widthInpDel" type="password" formControlName="password">
+        </div>
+        <div class="width">
+            <button type="submit">{{text.sign}}</button>
+        </div>
+    </form>
+</div>

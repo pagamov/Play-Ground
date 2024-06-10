@@ -1,0 +1,30 @@
+<div mat-dialog-content>
+    <form [formGroup]="formChange">
+      <table>
+        <tr>
+          <td>{{ text.description }}</td>
+          <td><input formControlName="description"></td>
+        </tr>
+        <tr>
+          <td>{{ text.priority }}</td>
+          <td>
+            <select formControlName="priority" #prio name="" id="">
+              <option *ngFor="let opt of this.options" value="{{opt}}">
+                  {{opt}}
+              </option>
+          </select>
+          </td>
+        </tr>
+        <tr>
+          <td>{{ text.time }}</td>
+          <td><input formControlName="time" type="time"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">{{ text.cancel }}</button>
+    <div *ngIf="this.formChange.valid">
+      <button mat-button (click)="onClick()" cdkFocusInitial>{{ text.change }}</button>
+    </div>
+  </div>
