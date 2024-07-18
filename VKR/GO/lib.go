@@ -1,7 +1,5 @@
 package main
 
-import "math/big"
-
 func GCD(m int, n int) int {
 	var mult int = 1
 	if m > n {
@@ -38,12 +36,12 @@ func GCD(m int, n int) int {
 	}
 }
 
-type Q struct {
-	n int
-	m int
-}
+// type Q struct {
+// 	n int
+// 	m int
+// }
 
-func (q *Q) create(n big.Int) {
-	q.n = n
-	q.m = int(bigin)
-}
+// func (q *Q) create(n big.Int) {
+// 	q.n = n
+// 	q.m = int(bigin)
+// }

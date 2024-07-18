@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import pickle
+from time import time
 from data import Smooth_search, Smooth_file, Smooth_save
 from data import n, B, step
 from data import Smooth_search_parallel

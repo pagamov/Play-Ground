@@ -5,7 +5,7 @@ def Factor(n, B):
     from color import color
 
     # some functions to support functionality (LOL)
-    from lib import GCD,Q
+    from lib import GCD, Q
     q = Q(n)
 
     # class generating Factor base
