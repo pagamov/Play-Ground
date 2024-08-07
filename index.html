@@ -1,0 +1,119 @@
+<html>
+    <head></head>
+
+    <style>
+
+        :root {
+            --primary-color: black;
+            --height: 0.7cm;
+            --width: 7.5cm;
+
+            --width-left-text: 1cm;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+
+        .main {
+            background-color: var(--primary-color); 
+            /* top: 10cm; */
+            width: var(--width); 
+            height: var(--height);
+            border-radius: 4px;
+            /* display: block; */
+            position: relative;
+        }
+
+        .left-text {
+            position: absolute;
+            background-color: white;
+            border-color: azure;
+            width: var(--width-left-text);
+            height: calc(var(--height) - 0.1cm * 2);
+            margin-top: 0.1cm;
+            margin-left: 1cm;
+        }
+
+        .center-text {
+            position: absolute;
+            background-color: white;
+            border-color: azure;
+            width: var(--width-left-text);
+            height: calc(var(--height) - 0.1cm * 2);
+            margin-top: 0.1cm;
+            margin-left: 4cm;
+        }
+
+        .right-text {
+            position: absolute;
+            text-align: right;
+            color: white;
+            /* background-color: white; */
+            border: 1px azure;
+            width: var(--width-left-text);
+            height: calc(var(--height) - 0.1cm * 2);
+            margin-top: 0.1cm;
+            margin-left: 4.8cm;
+        }
+
+        .right-box {
+            position: absolute;
+            background-color: white;
+            /* border-color: azure; */
+            width: var(--width-left-text);
+            height: calc(var(--height) - 0.1cm * 2);
+            margin-top: 0.1cm;
+            margin-left: 6.0cm;
+            border-radius: 2px;
+        }
+
+        .numero {
+            width: 1cm;
+            height: 1cm;
+            fill: currentColor;
+        }
+
+        #demoFont {
+            font-family: Georgia, serif;
+            font-size: 16px;
+            letter-spacing: 0px;
+            word-spacing: 0px;
+            color: white;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: italic;
+            font-variant: normal;
+            text-transform: capitalize;
+        }
+    </style>
+    
+    <body>
+        <div class="main">
+            <div class="left-text">
+                
+            </div>
+
+            <div class="center-text">
+                
+            </div>
+
+            <div class="right-text">
+                <div id="demoFont">№</div>
+                
+                <!-- <svg>
+                    <text font-size="1">
+                        №
+                    </text>
+                </svg> -->
+                <!-- <svg class="numero" viewBox="0 0 1 1">
+                    <text x="1" y="1" font-size="1">№</text>
+                </svg> -->
+            </div>
+
+            <div class="right-box">
+                
+            </div>
+        </div>
+    </body>
+</html>
